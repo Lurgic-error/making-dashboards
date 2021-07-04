@@ -1,0 +1,53 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 1em;
+}
+
+.aside {
+    /* align-self: start; */
+    background-color: rgb(10, 22, 59);
+
+}
+
+.aside-wrapper {
+    height: 100vh;
+}
+
+.sibebar {
+    position: fixed;
+    top: 0;
+
+}
+
+.main {
+    background-color: #333;
+    color: #fff;
+    /* overflow-y:scroll; */
+}
+
+.main-content > * + * {
+    margin-top: 1.5em;
+}
+
+.image-box {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(71, 71, 71, 0.445);
+}
